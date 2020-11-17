@@ -1,3 +1,4 @@
+/*General*/
 html {
 	height: auto;
 	background-color: #2b2b2b !important;
@@ -18,11 +19,6 @@ a {
 	font-family: 'Vollkorn', serif;
 }
 
-#map {
-	height: 86vh;
-	width: 100%;
-}
-
 .flex-center {
 	display: flex;
 	justify-content: center;
@@ -33,18 +29,43 @@ a {
 	align-items: center;
 }
 
+.small-margin {
+	margin-bottom: 5px;
+}
+
+.text-col-black {
+	color: black !important;
+	text-decoration: black !important;
+}
+
+.images {
+	width: 75%;
+}
+
+.only-mobile {
+	display: none;
+}
+
+h3,
+h4,
+p {
+	color: white !important;
+}
+
+/*Map*/
+#map {
+	height: 86vh;
+	width: 100%;
+}
+
+/*Site Nav*/
 .site-header-main {
 	background-color: #2b2b2b;
 	width: 100vw;
 	margin-bottom: 0px !important;
 }
 
-.small-margin {
-	margin-bottom: 5px;
-}
-
 /*Tabs*/
-
 .float-tabs {
 	position: absolute;
 	padding: 5%;
@@ -106,14 +127,10 @@ a {
 	color: #2b2b2b;
 }
 
+/*List*/
 #list_box {
 	height: 88vh;
 	overflow: scroll;
-}
-
-.text-col-black {
-	color: black !important;
-	text-decoration: black !important;
 }
 
 .bg-brand {
@@ -126,23 +143,7 @@ a {
 	left: 1%;
 }
 
-.images {
-	width: 75%;
-}
-
-.only-mobile {
-	display: none;
-}
-
-h3,
-h4,
-p {
-	color: white !important;
-}
-
 @media screen and (max-width: 849px) {
-	/* General */
-
 	.only-mobile {
 		display: block;
 	}
@@ -173,7 +174,4 @@ p {
 		min-width: 220px;
 		min-height: 80px;
 	}
-}
-
-@media screen and (min-width: 850px) {
 }

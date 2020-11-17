@@ -595,6 +595,7 @@ console.log('Build Tabs')
 
 function buildList(data){
 
+	//Vars for list
 	var cityName = [];
 	var country = [];
 	var lat = [];
@@ -605,7 +606,8 @@ function buildList(data){
 	var text = [];
 
 	$.each(data, function(index){
-		
+	//List creation loop
+
 		cityName[index] = [data[index].cityName];
 		country[index] = [data[index].country];
 		lat[index] = [data[index].lat];
@@ -615,7 +617,7 @@ function buildList(data){
 		lede[index] = [data[index].lede];
 		text[index] = [data[index].Text];
 
-	 //Tabs Create
+	 //Lists Create
 		var list = document.getElementById('list_box');
 
 		var listHtml = '';
