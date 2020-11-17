@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Light Pollution</title>
+		<meta
+			name="description"
+			content="Light Pollution: An Interactive Map"
+		/>
+		<meta
+			name="keywords"
+			content="Astronomy, Journalism, Interactive, Light Pollution, Universe, Stars, Stargazing"
+		/>
+
+		<!--Style Sheets-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/themestyle.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Palanquin|Vollkorn&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/c94ac4a02e.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+
+	<body>
+		<!--Header-->
+		<header id="masthead" class="site-header" role="banner">
+			<div id="header-wrapper">
+				<div id="header-content" class="">
+					<div class="wrapper">
+						<div class="site-header-main">
+							<div class="site-branding">
+								<a
+									href="https://www.andrewdundas.com/"
+									class="custom-logo-link"
+									rel="home"
+									><img
+										src="https://www.andrewdundas.com/wp-content/uploads/2020/04/cropped-ad_logo_White-1.png"
+										class="custom-logo"
+										alt="Andrew Dundas"
+								/></a>
+								<div class="site-identity">
+									<p class="site-title">
+										<a href="https://www.andrewdundas.com/" rel="home"
+											>Andrew Dundas</a
+										>
+									</p>
+									<p class="site-description">Youth Exchange Travel Map</p>
+								</div>
+								<!-- .site-identity -->
+							</div>
+							<!-- .site-branding -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="map_box">
+		<!--Map-->
+			<div id="map"></div>
+		</div>
+
+		<div id="list_box"> </div>
+
+		<button id="toggle-list"> Toggle View </button>
+
+		<div id="tabs-box"></div>
+
+		<div id="large-tabs-box"></div>
+
+		<div id="screen-cover">
+			<h1 class="return-1 m-0">Return to Map</h1>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		<script
+			async
+			defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbx0PZDeZXfrVwDRHkZq2K6BXFfbmlLWs&callback=initMap"
+		></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
